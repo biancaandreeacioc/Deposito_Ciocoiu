@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+       
+        <title>Registrazione</title>
+        
+    </head>
+    <body>
+        
+        <div>
+            <img src="colorful-welcome-design-template-free-vector.jpg" alt="Benvenuto">
+            <!--intestazione con titolo principale-->
+            <h1> <strong>Registrazione</strong></h1>
+
+            
+        </div>
+
+        <div>
+            <!--sezione con paragrafo-->
+            <p>Al fine di procedere con la procedura, si prega di <em>completare</em> i campi sottostanti</p>
+            <h2>Registrati</h2>
+        </div>
+
+        <div>
+            <!--Form di registrazione-->
+            <form>
+                <p>Inserisci il nome</p>
+                <label for="text">Nome</label>
+                <input type="text" id="nome" name="Nome" placeholder="Mario Rossi" required>
+                
+                <p>Inserisci l'E-mail</p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="Email" placeholder="nome@email.it" required>
+                
+                <p>Inserisci la password</p>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="1234" required>
+                <div>
+                    <!--Radio Button-->
+                    <p>Seleziona se hai almeno 18 anni</p>
+                    <label for="età">si</label>
+                    <input type="radio" name="Età" value="Si">
+                    <label for="età">no</label>
+                    <input type="radio" name="Età" value="No">
+
+                </div>
+
+                <div>
+                    <!--Select-->
+                    <p>Indica il tuo genere</p>
+                    <lable for="genere">Genere</lable>
+                    <select id="genere" name="genere">
+                        <option value="uomo">Uomo</option>
+                        <option value="donna">Donna</option>
+                        <option value="***">Preferisco non dichiararlo</option>
+                    </select>
+                </div>
+
+                <div>
+                    <!--checkbox-->
+                    <p>Seleziona dove ci hai visti</p>
+                    <input type="checkbox" id="linkedIn" name="linkedIn" value="linkedIn">
+                    <label for="linkedIn">LinkedIn</label>
+
+                    <input type="checkbox" id="indeed" name="indeed" value="indeed">
+                    <label for="indeed">Indeed</label>
+
+                    <input type="checkbox" id="facebook" name="facebook" value="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+
+                <button type="submit">Invia</bbutton> 
+            </form>
+        </div>
+
+    </body>
+</html>

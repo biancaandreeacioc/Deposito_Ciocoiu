@@ -1,0 +1,35 @@
+/* Selettore p applica lo stile a tutti i paragrafi. 
+Selettore generale*/
+p {
+    color:blue;
+    
+}
+
+/* Selettore di classe */
+.evidenziato{
+    background-color: yellow;
+} 
+
+#header{
+    font-size: 24px;
+}
+
+/* Proprietà fontsize controlla la dimensione degli <h1> */
+h1{
+    font-size: 32px;
+}
+
+
+/* Valore lightgray definisce il colore dello sfondo del div */
+div{
+    background-color: lightgray;
+}
+
+div p{
+    color:green;
+}
+
+/* Pseudo-classi:seleziona elementi in base a una condizione */
+a:hover {
+    color:red;
+}

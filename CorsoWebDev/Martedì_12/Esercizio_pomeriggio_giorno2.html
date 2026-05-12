@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8"> <!--a favore del browser-->
+        <meta name="description" content="Registrazione evento">
+        <!--autore-->
+        <meta name="author" content="Bianca Andreea Ciocoiu">
+        <!--viewport dice al browser che può riadattarsi-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Titolo Sito-->    
+        <title>Sito di Registrazione evento tecnologico</title>
+        
+    </head>
+    <body>
+        
+        <div>
+
+        <header>
+            <h1><strong>Sito di Registrazione evento</strong></h1>
+        </header>
+
+        <nav>
+            <!--immagine evento-->
+            <img src="pngtree-futuristic-blue-rounded-tech-background-image_15804949.jpg" alt="Img">
+            
+            <!--url organizzatore-->
+            <div>
+            <a href="https://github.com/biancaandreeacioc/Deposito_Ciocoiu">Sito organizzatore</a>
+            </div>
+        </nav>
+
+        <main>
+            <section>
+
+                <div>
+                <h2>Programma evento</h2>
+                <p>Questo è il programma dei prossimi giorni</p>
+                <!--Tabbella programma-->
+                <table border="1"> <!--Definisce la struttura generale-->
+                    <thead> <!--contiene l'intestazione -->
+                        <tr>
+                            <th>Giorno</th> 
+                            <th>Ora</th>
+                            <th>Argomento</th>
+                            </tr>
+                    </thead>
+                    <tbody> <!--racchiude i dati effettivi nelle celle td, organizzate per righe tramite tr-->
+                        <tr>
+                            <td>12 Maggio</td>
+                            <td>9:00-13:00</td>
+                            <td>HTML</td>
+                        </tr>
+                        <tr>
+                            <td>12 Maggio</td>
+                            <td>14:00-17:00</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>13 Maggio</td>
+                            <td>9:00-13:00</td>
+                            <td>JavaScript</td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+
+                <div>
+                    <!--Registrazione sito-->
+                    <p>Se sei interessato a partecipare, si prega di <em>completare</em> i campi sottostanti.
+                    Quelli denotati in <strong>grassetto</strong> sono obbligatori.</p>
+                    <h2>Registrati all'evento</h2>
+                </div>
+
+                <div>
+                <!--Form di registrazione-->
+                <form>
+                    <!--Inserimento nome-->
+                    <p>Inserisci il tuo nome:</p>
+                    <label for="text"><strong>Nome</strong></label>
+                    <input type="text" id="nome" name="Nome" placeholder="Mario Rossi" required>
+                    
+                    <!--Inserimento E-mail-->
+                    <p>Inserisci la tua E-mail:</p>
+                    <label for="email"><strong>Email</strong></label>
+                    <input type="email" id="email" name="Email" placeholder="nome@email.it" required>
+                    
+                    <!--Inserimento password-->
+                    <p>Inserisci una password:</p>
+                    <label for="password"><strong>Password</strong></label>
+                    <input type="password" id="password" name="password" placeholder="1234" required>
+                    
+                    <div>
+                        <!--Radio Button-->
+                        <p>Seleziona se hai almeno 18 anni:</p>
+                        <label for="età">si</label>
+                        <input type="radio" id="età" name="Età" value="Si">
+                        <label for="età">no</label>
+                        <input type="radio" name="Età" value="No">
+
+                    </div>
+
+                    <div>
+                        <!--Select-->
+                        <p>Seleziona il tuo massimo livello di istruzione:</p>
+                        <lable for="istruzione">Istruzione</lable>
+                        <select id="istruzione" name="istruzione">
+                            <option value="diploma">Diploma</option>
+                            <option value="laurea triennale">Laurea Triennale</option>
+                            <option value="laurea magistrale">Laurea Magistrale</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <!--checkbox-->
+                        <p>Seleziona se e quali linguaggi di programmazione conosci:</p>
+                        <input type="checkbox" id="python" name="python" value="python">
+                        <label for="python">Python</label>
+
+                        <input type="checkbox" id="java" name="java" value="java">
+                        <label for="java">Java</label>
+
+                        <input type="checkbox" id="nessuno" name="nessuno" value="nessuno">
+                        <label for="nessuno">Nessuno</label>
+                    </div>
+
+                    <span>
+                        <button type="submit">Invia</button> 
+                    </span>
+                </form>
+                </div>
+            </section>
+
+            <article>
+                <h2>Descrizione corso</h2>
+                <p>Il seguente corso ha lo scopo di fornirti le basi ed aiutarti a scopire il mondo tech.</p>
+            </article>
+        </main>
+
+        <footer>
+            <p>Copyright 2026</p>
+        </footer>
+
+        </div>
+
+    </body>
+</html>
