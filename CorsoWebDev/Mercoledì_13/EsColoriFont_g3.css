@@ -1,0 +1,52 @@
+/* questo colora il box pagina */
+body {
+    background-color: rgb(125, 191, 125);
+    font-family: Arial, sans-serif;
+}
+
+/* questo crea un box sopra*/
+.box {
+    background-color: white;
+    padding: 20px;
+}
+/* 
+questo lavora sul titolo */
+h1 {
+    color: #632828;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+/* questo lavora sul paragrafo */
+p{
+    color: rgb(43, 195, 195);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+/* esempio misure */
+
+.esempiomisure{
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* esempio padding */
+
+.esempiopadding{
+    padding: 20px;
+    background-color: rgb(1, 16, 1);
+}
+
+/* esempio bordi.
+mette bordi al contenuto */
+.esempiobordi{
+    border: 5px solid black;
+
+}
+
+/* esempio margini.
+mi sposta il contenuto */
+.esempiomargini{
+    margin: 30px;
+}

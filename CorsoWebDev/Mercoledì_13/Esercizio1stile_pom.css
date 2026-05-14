@@ -1,0 +1,81 @@
+/* definisco il body */
+body{
+    background-color: aliceblue;
+    
+}
+
+/* definisco la griglia */
+.contenitore{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    gap: 10px;
+    height: 600px;
+}
+
+/* definisco l'header */
+.header{
+    grid-area: header;
+    background-color: rgba(50, 127, 152, 0.503);
+    padding: 10px;
+    display:flex;
+    align-content: center;
+    justify-content: left; 
+    height:20px;
+}
+
+/* classe per titolo detro l'header */
+.nome{
+    font-size: 20px;
+    color: rgba(53, 53, 201, 0.873);
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ /* classe che mi serve per l'elemento home e menù */
+.collegamenti{
+    justify-items: right;
+    margin-left: 75%;
+    align-content: center;
+    gap:40px;
+}
+
+a:hover {
+    color:red;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    background-color: rgba(211, 211, 211, 0.541);
+    margin-top: 20px; /*stazio tra header e sidebar*/
+    height: 80%;
+}
+
+.contenuto{
+    grid-area: main;
+    background-color: rgb(245, 245, 239);
+    position: relative;
+    padding:20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    height: 80%;
+}
+
+.footer{
+    grid-area: footer;
+    background-color: rgba(50, 127, 152, 0.503);
+    padding: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    
+    font-size: 10px;
+    color: white;
+}
+
+
+

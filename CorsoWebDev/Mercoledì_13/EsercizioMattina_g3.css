@@ -1,0 +1,76 @@
+/* coloriamo il box pagina */
+body {
+    background-color: rgb(94, 134, 234);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* criamo un box sopra*/
+.box {
+    background-color: white;
+    padding: 30px;
+}
+/* lavora sul titolo */
+h1 {
+    color: #9ab92aee;
+    font-size: 3rem;
+    line-height: 1;
+}
+
+/* pseudo-classe */
+a:hover {
+    color:red
+}
+
+/* lavora sul paragrafo */
+p{
+    color: rgb(113, 238, 238);
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+/* generico */
+p {
+    font-size: 24px;
+}
+
+/* classe */
+.testo{
+    background-color:rgb(26, 78, 127);
+}
+
+/* Id */
+#titolo{
+    color:rgb(204, 17, 132);
+}
+
+div {
+    color: rgb(56, 150, 56);
+}
+
+/* proprietà margin */
+.margini{
+    margin: 50px;
+}
+
+/* padding */
+.padding{
+    padding: 20px;
+    background-color: rgb(1, 16, 1);
+}
+
+/* bordi*/
+.bordi{
+    border: 5px solid black;
+
+}
+
+/* classe per footer */
+.footer{
+    font-size: 10px;
+}
+
+#sotto{
+    color:rgb(211, 142, 185);
+    width: 50%;
+}
+
