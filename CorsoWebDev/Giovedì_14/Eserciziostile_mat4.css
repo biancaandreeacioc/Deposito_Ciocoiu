@@ -1,0 +1,143 @@
+:root{
+    --colore-principale: #f5f6dc; /*sfondo card*/
+    --colore-testo: #e2a4cd; /*viene applicata al titolo*/
+    --spaziatura: 20px; /*controlla il padding*/
+}
+
+/* creo il body */
+body{
+    background-color: rgb(240, 200, 206);
+}
+
+/* definisco la griglia */
+.contenitore{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidder main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 20px 1fr 20px;
+    gap: 10px;
+    height: 600px;
+}
+
+/* creo l'intestazione */
+.header{
+    grid-area: header;
+    display:flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background-color: rgb(255, 192, 203);
+}
+
+/* definisco la classe nome che è quella sopra nell'header */
+.nome{
+    color:white;
+    font-size: 20px;
+    text-align: left;
+
+}
+
+/* mi creo il menù */
+.menu{
+    justify-content: right;
+    display: flex;
+    gap:10px;
+    margin-left: auto;
+}
+
+.menu select{
+    color:rgb(221, 178, 178);
+    
+}
+
+
+
+h1{
+    color:white;
+    font-size: 15px;
+    
+}
+
+p{
+    color:white;
+    font-size: 10px;
+    
+}
+
+/* qui imposto il sidder ovvero la barra laterale */
+.sidder{
+    grid-area: sidder;
+    display: flex;
+    align-items: center; /*allinea al centro*/
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: rgba(241, 215, 241, 0.271);
+    margin-bottom: 200px;
+}
+
+.gusti{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+ /* gestisco i gusti dentro il sidder */
+.gusti p{
+    background-color: white;
+    color: rgb(184, 115, 184);
+    font-size: 15px;
+}
+
+.main{
+    grid-area: main; /*tipo della grid a cui mi riferisco*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* creo la card */
+.card{
+    background-color: var(--colore-principale);
+    padding: var(--spaziatura);
+    color: white;
+    text-align: center; /*testo allineato al centro*/
+    width: 200px;
+}
+
+/* imposto l'immagine nella card */
+.card img{
+    width:100%; /*larghezza card*/
+    height: 100px; /*altezza card*/
+    margin-top: 5px;
+}
+
+/* questo è il titolo della card */
+h2{
+    color: rgb(230, 127, 230);
+    font-size: 15px;
+    
+}
+
+/* titolo generic che ho impostato nel sidder */
+h1{
+    color: var(--colore-testo);
+}
+
+/* qui imposto il footer */
+.footer{
+    grid-area: footer;
+    background-color: rgb(242, 209, 242);
+    display: flex;
+    justify-content: center; /*posiziono il contenuto al centr*/
+    align-items: center;
+    padding:15px;
+   
+} 
+
