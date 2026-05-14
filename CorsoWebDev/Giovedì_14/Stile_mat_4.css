@@ -1,0 +1,72 @@
+/* creo il root che è il selettore */
+:root{
+    --colore-principale: #3498db; /*sfondo card*/
+    --colore-testo: #2c3e50; /*viene applicata al titolo*/
+    --spaziatura: 20px; /*controlla il padding*/
+}
+
+/* creo la card */
+.card{
+    background-color: var(--colore-principale);
+    padding: var(--spaziatura);
+    color: white;
+}
+
+/* titolo generic */
+h1{
+    color: var(--colore-testo);
+}
+
+/* pseudo-elementi */
+.messaggio::before{ /*:before inserisce il simbolo di avviso prima del testo del paragrafo*/
+    content: "X";
+    color: red;
+}
+
+.messaggio::after{ /*:after aggiunge un simbolo di conferma alla fine*/
+    content: "V";
+    color: green;
+}
+
+.box {
+width: 100px;
+height: 100px;
+background-color: steelblue;
+transition: transform 0.5s; /*crea un effetto fluido quando l'elemento cambia dimensione durante l'hover*/
+animation: cambioColore 3s infinite; /*cambioColore 3s; infinite esegue l'animazione continuamente ogni 3s*/
+}
+
+.box:hover {
+transform: scale(1.2); /*scale(1.2) ingrandisce il box al passaggio del mouse*/
+}
+
+@keyframes cambioColore { /*definisce un'animazione che modifica il colore dello sfondo nel tempo*/
+0% {
+background-color: steelblue;
+}
+
+50% {
+background-color: coral;
+}
+
+100% {
+background-color: steelblue;
+}
+}
+
+/* display e visibility */
+
+.box1{
+    display: block;
+    background-color: lightblue;
+}
+
+.box2{
+    visibility: hidden;
+    background-color: lightgreen;
+}
+
+.box3{
+    display: none;
+    background-color: coral;
+}
