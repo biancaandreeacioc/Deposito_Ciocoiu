@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Il Tuo Fioraio</title>
+        <meta name="description" content="">
+        <meta name="author" content="Bianca Andreea Ciocoiu">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="Test.css">
+    </head>
+    <body>
+        
+        <!-- creo il contenitore principale che racchiude tutto il resto -->
+        <div class="contenitore">
+
+            <!-- inserisco l'header che sarà la parte di sopra contenente il nome del sito -->
+            <header>
+
+                <!-- nome del fioraio -->
+                 <h1>Il Tuo Fioraio</h1>
+
+            </header>
+
+            <!-- faccio la navbar con i link per i contatti, home, chi siamo -->
+            <nav>
+
+                <!-- link del menù -->
+                 <a href="#">Home</a> <!--per ora li imposto senza collegamento ma al posto del # ci andrà il link -->
+
+                <!-- link chi siamo -->
+                 <a href="#">Chi siamo</a>
+
+                <!-- link Contatti  -->
+                 <a href="#">Contatti</a>
+
+            </nav>
+
+            <!-- mi creo il sidebar che conterrà i servizi offerti -->
+             <div class="sidebar">
+
+                <!-- titolo nel sidebar -->
+                <h2>I nostri servizi</h2>
+
+                <!-- opzione select per i fiori -->
+                    <select id="fiori">
+                        <option value="" disabled selected>Fiori</option>
+                        <option value="rose">Rose</option>
+                        <option value="girasoli">Girasoli</option>
+                        <option value="tulipani">Tulipani</option>
+                    </select>
+
+                <!-- opzione select per offerte -->
+                    <select id="offerte">
+                        <option value="" disabled selected>Offerte</option>
+                        <option value="sconto10%">Sconto 10%</option>
+                        <option value="festa della mamma">Festa della Mamma</option>
+                        <option value="2x1">2x1</option>
+                    </select>
+                    
+
+             </div>
+
+             <!-- ora mi costruisco il main che è la sezione principale -->
+             <main>
+                <!-- metto una descrizione del fioraio -->
+                <div class="descrizione">
+                    <h2>Benvenuti</h2>
+
+                    <!-- imposto un paragrafo con la descrizione -->
+                     <p>
+                        Questo è anche il tuo negozio. 
+                        Qui potrai trovare varie composizioni floreali
+                        pensate per varie occasioni.
+                     </p>
+                </div>
+
+                <!-- creo una card con un'immagine -->
+                 <div class="card">
+                    <!-- metto l'immagine -->
+                     <img src="C:\Users\bianc\OneDrive\Desktop\CorsoWebDev\Venerdì_15\Test\flower-483.jpg" alt="fiori">
+
+                     <!-- contenuto card -->
+                      <div class="contenuto_card">
+                        <!-- titolo della card -->
+                        <h3>Fiori freschi</h3>
+                        <!-- testo card -->
+                         <p>La nostra composizione preferita</p>
+                      </div>
+                 </div>
+             </main>
+
+             <!-- creo il forum contatti -->
+              <div class="forum">
+                <h3>Contattaci</h3>
+                
+                <!-- forum -->
+                
+                <div class="forum">
+
+                <!-- email -->
+                <input type="email" placeholder="mariorossi@email.com">
+
+                <!-- messaggio -->
+                <textarea placeholder="Scrivi il tuo messaggio"></textarea>
+
+                <!-- pulsante invio -->
+                <button type="submit">Invia</button>
+
+                </div>
+              </div>
+            
+              <!-- metto il footer -->
+              
+                <div class="footer">
+                    <p>Copryright@2026</p>
+                </div>
+        </div>
+
+
+        
+    </body>
+</html>

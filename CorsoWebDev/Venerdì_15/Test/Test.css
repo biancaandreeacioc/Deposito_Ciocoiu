@@ -1,0 +1,171 @@
+/* creo la root che conterrà le variabili di css */
+:root{
+    /* colore principale */
+    --colore-principale:rgb(10, 172, 10);
+    /* colore secondario */
+    --colore-secondario:rgb(218, 104, 123);
+    --colore-sidebar:rgba(218, 104, 123, 0.411);
+    --spaziatura: 20px; /*controlla il padding*/
+    --colore-testo:rgb(7, 86, 7);
+}
+
+/* imposto il body della pagina */
+body{
+    background-color: rgb(192, 234, 192);
+}
+
+/* creo la griglia della pagina */
+.contenitore{
+    display: grid; /*attiva la griglia*/
+    grid-template-areas: /*tipo griglia*/
+    "header header"
+    "nav nav"
+    "sidebar main"
+    "forum forum"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 30px 20px 1fr 100px 20px;
+    gap: 10px;
+    height: 600px;
+}
+
+header{
+    /* aria grid */
+    grid-area: header;
+
+    /* sfondo */
+    background-color: var(--colore-principale);
+
+    /* colore testo */
+    color:var(--colore-testo);
+
+    display:flex;
+    /* centra orizzontale */
+    justify-content: center;
+    /* centra verticale */
+    align-items: center;
+    padding: var(--spaziatura);
+}
+
+/* navbar */
+nav{
+    /* area griglia */
+    grid-area: nav;
+    /* sfondo */
+    background-color: var(--colore-secondario);
+    display: flex;
+    /* metto le scritte sulla sinistra */
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+/* link navbar */
+nav a{
+    /* colore testo */
+    color:green;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    /* sfondo */
+    background-color: var(--colore-sidebar);
+    /* padding */
+    padding: var(--padding);
+    /* flexbox */
+    display: flex;
+    /* elementi in colonna */
+    flex-direction: column;
+    /* spazio elementi */
+    gap: 20px;
+    margin-bottom: 200px; /*accorcia i margini sotto*/
+
+}
+
+
+main{
+
+    /* area grid */
+    grid-area: main;
+    /* padding */
+    padding: var(--padding);
+    /* flexbox */
+    display: flex;
+    /* elementi colonna */
+    flex-direction: column;
+    /* spazio elementi */
+    gap: 30px;
+}
+
+.descrizione{
+    /* sfondo */
+    background-color: white;
+    /* padding */
+    padding: var(--spaziatura);
+    color: var(--colore-secondario);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center; /*allineo la scritta al centro*/
+}
+
+.card{
+
+    /* larghezza card */
+    width: 300px;
+    /* sfondo */
+    background-color: white;
+     /* centro la card main */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* immagine card */
+.card img{
+    /* larghezza completa */
+    width: 100%;
+    /* altezza immagine */
+    height: 220px;
+    /* adatta immagine */
+    object-fit: cover;
+}
+
+/* contenuto card */
+.contenuto_card{
+    /* padding interno */
+    padding: 15px;
+    color: rgb(162, 39, 136);
+    text-align: center; /*allineo la scritta al centro*/
+}
+
+
+.forum{
+    /* area grid */
+    grid-area: forum;
+    /* sfondo */
+    background-color: rgb(205, 185, 185);
+    /* padding */
+    padding: var(--padding);
+    /* centro il testo */
+    text-align: center;
+}
+.forum forum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer{
+    /* area grid */
+    grid-area: footer;
+    /* sfondo */
+    background-color: var(--colore-principale);
+    /* colore testo */
+    color: white;
+    /* flexbox */
+    display: flex;
+    /* centro orizzontale */
+    justify-content: center;
+    /* centro verticale */
+    align-items: center;
+    /* dimensione scritta */
+    font-size: 10px;
+}
