@@ -27,9 +27,10 @@ header{
     color: white;
 }
 
-main{
+.main-container{
     grid-area: main;
     display: flex;
+    flex-direction: column; /*metto in colonna*/
     padding: 20px;
     text-align: center;
 }
@@ -75,7 +76,56 @@ input, textarea{
     padding: 20px;
     border-radius: 1px;
     border: 1px solid rgb(173, 129, 129);
+    border-radius: 2px;
 }
 
+form button{
+    background-color: var(--colore-principale);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
 
+form button:hover{
+    background-color: rgb(145, 58, 58);
+}
+/* imposto lo spazio occupato dalle card come una griglia */
+#contenitoreLibri{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 150px);/*creo quante colonne servono con auto-fit di 50px ciascuna
+    questo devo riguardarlo*/
+}
 
+/* creao card */
+.card{
+    background-color: rgb(255, 241, 221);
+    border-radius: 2px;
+}
+/* Regolo responsive-questo l'ho visto dalla slide */
+@media screen and (max-width: 768px) {
+
+.header {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.menu-button {
+display: block;
+}
+
+.menu {
+display: none;
+flex-direction: column;
+width: 100%;
+margin-top: 15px;
+}
+
+.menu.active {
+display: flex;
+}
+
+.container {
+flex-direction: column;
+}
+}
