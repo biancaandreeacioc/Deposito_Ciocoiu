@@ -1,0 +1,66 @@
+:root{
+    --colore-principale:green;
+    --colore-secondario:rgb(228, 224, 201);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--colore-secondario);
+    color: rgb(85, 74, 74);
+}
+
+/* layout pagina */
+.contenitore{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    background-color: var(--colore-principale);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    padding: 20px;
+}
+
+.introduzione{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.bottoni{
+    text-align: center;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 1px;   
+}
+
+.animali{
+    display: grid;
+    grid-template-columns: 30px 30px;
+    gap: 15px;
+}
+
+.card{
+    background-color: var(--colore-principale);
+    border-radius: 2px;
+}
+
+
+
+

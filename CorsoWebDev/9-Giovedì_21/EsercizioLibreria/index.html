@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="contenitore">
+            <header>
+                <h1 id="titolo">Libreria digitale</h1>
+                <!--menù hamburger-->
+                <button id="menuButton" class="menu-button">
+                    ☰
+                </button>
+                <!--menu-->
+                <nav id="menu" class="menu">
+                    <a href="#">Home</a>
+                    <a href="#">Libri</a>
+                    <a href="#">Contatti</a>
+                </nav>
+            </header>
+
+            <main>
+
+                <p class="introduzione">
+                    Benvenuti nella nostra libreria digitale.
+                </p>
+
+
+                <!--form-->
+                <form id="formInserimento">
+                    <input type="text" id="titolo" placeholder="Titolo libro" required>
+                    <input type="text" id="autore" placeholder="Autore" required>
+                    <input type="text" id="genere" placeholder="Genere" required>
+                    <input type="number" id="anno" placeholder="Anno pubblicazione" required>
+                    <textarea id="descrizione" placeholder="Descrizione libro"></textarea>
+                    <button type="submit">Aggiungi</button>
+                </form>
+
+                <section id="contenitoreLibri">
+                    
+                </section>
+            </main>
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
