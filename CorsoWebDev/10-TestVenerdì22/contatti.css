@@ -1,0 +1,122 @@
+/* definisco la root */
+:root{
+    --colore-principale:rgb(236, 236, 218);
+    --colore-secondario:rgb(144, 91, 91);
+
+}   
+
+/* definisco il body della pagina */
+body{
+    background-color: var(--colore-principale);
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+/* imposto la griglia */
+.contenitore{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "sidebar main"
+    "footer footer";
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 80px 1fr 50px;  
+}
+/* definisco l'header */
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colore-secondario);
+    color: white;
+    padding: 20px;
+}
+
+/* lavoro sui link che portano alle altre pagine */
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar{
+    grid-area: sidebar;
+    display: flex;
+    background-color: rgb(228, 214, 200);
+    padding: 20px;
+    margin-top: 10px;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+    /* arrotondo i bordi */
+    border-radius: 10px;
+    /* posiziono gli elementi in colonna (uno sopra l'altro) */
+    flex-direction: column;
+    /* lascia spazio tra un elemento e l'altro */
+    gap: 10px;
+
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    margin-left: 50px;
+    min-height: 500px; /*main almeno alto 500px*/
+}
+
+main h2{
+    text-align: center;
+    color: var(--colore-secondario)
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+}
+
+input,
+textarea{
+    padding: 10px;
+    margin: auto;
+    border-radius: 5px;
+    border-color: var(--colore-secondario);
+}
+
+textarea{
+    height: 150px;
+}
+
+button{
+    background-color: var(--colore-secondario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(101, 67, 50);
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: var(--colore-secondario);
+    justify-content: right;
+    align-items: center;
+    /* margin:auto; */
+}
+footer p{
+    color: white;
+    margin-right: 30px;
+}
+
+#risposta{
+    margin-top: 20px;
+    color:green;
+}

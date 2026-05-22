@@ -1,0 +1,76 @@
+/* definisco la root */
+:root{
+    --colore-principale:rgb(236, 236, 218);
+    --colore-secondario:rgb(144, 91, 91);
+
+}   
+
+/* definisco il body della pagina */
+body{
+    background-color: var(--colore-principale);
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+/* imposto la griglia */
+.contenitore{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 50px;
+    
+}
+
+/* definisco l'header */
+.header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--colore-secondario);
+    color: white;
+    padding: 20px;
+}
+
+/* lavoro sui link che portano alle altre pagine */
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+    min-height: 500px; /*main almeno alto 500px*/
+
+}
+/* questa è la parte centrale */
+.home{
+    background-color: white;
+    border-radius: 5px;
+    padding: 30px;
+    width:30%;
+    height: 70%;
+    margin-bottom: 30px;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: var(--colore-secondario);
+    justify-content: right;
+    align-items: center;
+    /* margin:auto; */
+}
+footer p{
+    color: white;
+    margin-right: 30px;
+}
