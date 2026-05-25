@@ -1,0 +1,113 @@
+:root{
+    --colore-sfondo: rgb(224, 223, 214); 
+    --colore-card: rgba(253, 247, 247, 0.62);
+    --colore-testo: rgb(162, 199, 172);
+    --colore-header:rgb(60, 100, 53);
+}
+
+body{
+    font-family: Arial;
+    background: var(--colore-sfondo);
+}
+/* definisco griglia */
+.contenitore{
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr auto;
+    min-height: 100vh;
+}
+
+/* header */
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--colore-header);
+    color: white;
+    padding: 20px;
+}
+
+nav a{
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: var(--colore-testo);
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 0;
+}
+
+.card{
+    background-color: var(--colore-card);
+    color: var(--colore-testo);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input,select{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--colore-testo);
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: var(--colore-header);
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: var(--colore-header);
+    justify-content: right;
+    align-items: center;
+    margin-top: auto;
+}
+footer p{
+    color: white;
+    margin-right: 30px;
+}
+
+#lista {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+/* ho chiesto all'ai come mettere il bottone a destra */
+#cancellaLista {
+    align-self: flex-end; /*questo mi serve per posizionare un singolo elemenmto dentro un conteniotore flex, indipendentemente dagli altri*/
+    margin-bottom: 15px;
+}
+

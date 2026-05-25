@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Inserisci Gioccatoli</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="contenitore">
+            <header>
+                <h1>Negozio Giocattoli</h1>
+                <nav id="menu" class="menu">
+                    <a href="index.html">Inserisci</a>
+                    <a href="lista.html">Lista</a>
+                    <a href="riepilogo.html">Riepilogo</a>
+                </nav>
+            </header>
+
+            <main>
+                <div class="card">
+
+                    <h2>Inserisci giocattolo</h2>
+
+                    <form id="formGiocattolo">
+
+                        <input type="text" id="nome" placeholder="Nome Gioccatolo" required>
+                        <input type="text" id="categoria" placeholder="Categoria di appartenenza" required>
+                        <input type="number" id="prezzo" placeholder="Prezzo €" required>
+                        <input type="number" id="eta" placeholder="Età consigliata" required>
+
+                        <select id="disponibile">
+                            <option value="si">Disponibile</option>
+                            <option value="no">Non disponibile</option>
+                        </select>
+
+                        <button type="submit">Salva</button>
+
+                    </form>
+
+                    <p id="messaggio"></p>
+
+                </div>
+            </main>
+
+            <footer>
+                <p>Copryright@2026</p>
+            </footer>
+
+
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
