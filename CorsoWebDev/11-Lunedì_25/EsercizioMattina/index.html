@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="contenitore">
+
+            <header>
+                <h1 id="titolo">Dashboard</h1>
+
+                <nav id="menu" class="menu">
+                    <a href="index.html">Dashboard</a>
+                    <a href="profilo.html">Area Personale</a>
+                </nav>
+
+            </header>
+
+            <main>
+                <div class="card">
+                    <h2>Crea il tuo profilo</h2>
+
+                    <p>
+                        Personalizza la tua esperienza salvando le tue preferenze di gioco.
+                    </p>
+
+                    <form id="formGiocatore">
+
+                        <input type="text" id="nome" placeholder="Nome giocatore" required>
+                        <input type="text" id="gioco" placeholder="Gioco preferito" required>
+                        <input type="text" id="piattaforma" placeholder="Piattaforma preferita" required>
+                        
+                        <!--bottone per salvare i dati-->
+                        <button type="submit">
+                            Salva Dati
+                        </button>
+
+                    </form>
+
+                    <!--bottone per eliminare i dati salvati-->
+                    <!-- <button id="eliminaButton">
+                        Cancella Dati
+                    </button> -->
+
+                    <!--bottone per cambiare tema-->
+                    <button id="temaButton">
+                        Cambia Tema
+                    </button>
+
+                    <!--contenitore per mostrarre le info salvate-->
+                    <p id="informazioni"></p>
+
+                </div>
+            </main>
+
+            <footer>
+                <p>Copryright@2026</p>
+            </footer>
+
+
+        </div>
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+:root{
+    --colore-sfondo: rgb(196, 190, 190); 
+    --colore-card: rgb(219, 215, 215);
+    --colore-testo: white;
+    --colore-header:rgb(73, 65, 65);
+    --colore-bottone: rgb(30, 29, 29);
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--colore-sfondo);
+    color: var(--colore-testo);
+    margin:0;
+}
+
+/* imposto la griglia */
+.contenitore{
+    min-height: 100vh; /*elemento almeno alto quanto la finestra dello schermo*/
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main main"
+    "footer footer";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 80px 1fr 50px;
+}
+
+header{
+    grid-area: header;;
+    background-color: var(--colore-header); 
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+a:hover{
+    background-color: var(--colore-sfondo);
+}
+
+main{
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    min-height: 0;
+}
+
+.card{
+    background-color: var(--colore-card);
+    padding: 30px;
+    border-radius: 10px;
+    width: 350px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--colore-bottone);
+    color: white;
+    margin-top: 10px;
+}
+
+button:hover{
+    background-color: rgb(93, 89, 89);
+}
+
+.dark-mode{
+    --colore-sfondo: rgb(78, 76, 76); 
+    --colore-card: rgb(143, 137, 137);
+    --colore-testo: black;
+}
+
+#messaggio{
+    margin-top: 20px;
+    color: green;
+}
+
+footer{
+    grid-area: footer;
+    display: flex;
+    background-color: var(--colore-header);
+    justify-content: right;
+    align-items: center;
+    margin-top: auto;
+}
+footer p{
+    color: white;
+    margin-right: 30px;
+}
