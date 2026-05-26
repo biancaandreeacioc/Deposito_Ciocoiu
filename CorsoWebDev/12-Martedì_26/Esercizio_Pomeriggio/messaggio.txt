@@ -1,0 +1,1 @@
+Messaggio da leggere in base alle chiamate dal file di testo
